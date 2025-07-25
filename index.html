@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My History Blog</title>
+        <link rel="stylesheet" href="dist/style.css" />
+
+        <!-- SVGs -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </head>
+    <body
+        class="text-lg text-gray-700 transition duration-300 font-Cardo dark:bg-gray-800 dark:text-gray-100 lg:text-2xl"
+    >
+        <!-- HEADER -->
+        <header>
+            <div
+                class="relative p-8 bg-gray-100 border-b border-gray-300 dark:border-gray-600 dark:bg-gray-950 lg:flex lg:flex-col lg:items-center lg:gap-3"
+            >
+                <!-- LOGO -->
+                <div
+                    class="flex items-center justify-center gap-2 lg:order-1 lg:my-5"
+                >
+                    <img
+                        class="w-10 mr-1.5"
+                        src="src/img/logo.png"
+                        alt="logo"
+                    />
+                    <h2 class="text-4xl lg:text-5xl">My History Blog</h2>
+                </div>
+
+                <!-- OPTIONS -->
+                <div
+                    class="absolute flex items-center gap-4 text-2xl right-8 top-8 lg:static lg:opacity-50 lg:gap-96 sm:gap-40"
+                >
+                    <div class="flex items-center gap-3">
+                        <ion-icon
+                            name="sunny-outline"
+                            class="lg:w-8 lg:h-8"
+                        ></ion-icon>
+                        <span
+                            id="scheme-toggle"
+                            class="relative w-10 h-5 transition bg-gray-500 rounded-full cursor-pointer hover:bg-gray-400"
+                        >
+                            <span
+                                id="dot"
+                                class="absolute top-0 bottom-0 w-4 h-4 m-auto ml-0.5 transition duration-300 rounded-full bg-gray-50 dark:bg-gray-900"
+                            ></span
+                        ></span>
+
+                        <ion-icon
+                            name="moon-outline"
+                            class="lg:hidden"
+                        ></ion-icon>
+                    </div>
+                    <ion-icon
+                        class="p-3 rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 lg:w-7 lg:h-7"
+                        name="search-outline"
+                    ></ion-icon>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav
+                class="flex justify-center gap-5 text-xl border-b border-gray-300 bg-gray-50 dark:bg-gray-900 dark:border-gray-600 lg:text-2xl"
+            >
+                <a
+                    style="border-color: #a39272; color: #87795f"
+                    class="px-2 py-3 border-b-4 hover:px-2 dark:hover:bg-gray-700 hover:bg-gray-100"
+                    href="#"
+                    >Home</a
+                >
+                <span class="py-3">/</span>
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="src/pages/archive.html"
+                    >Archive</a
+                >
+                <span class="py-3">/</span>
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="src/pages/about.html"
+                    >About</a
+                >
+                <span class="py-3">/</span>
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="src/pages/admin.html"
+                    >Admin</a
+                >
+            </nav>
+        </header>
+
+        <main>
+            <!-- MAIN ARTICLE -->
+            <section>
+                <a
+                    href="src/articles/article.html"
+                    class="grid grid-cols-2 m-20 overflow-hidden text-center rounded-md md:flex md:flex-col lg:m-12"
+                >
+                    <img
+                        src="src/img/main-article/battle-of-kadesh.jpg"
+                        alt="Battle of Kadesh scene"
+                    />
+                    <div
+                        class="flex flex-col items-center justify-center gap-5 bg-gray-100 dark:bg-gray-900 dark:text-gray-100 sm:p-5"
+                    >
+                        <h1 class="text-5xl sm:text-6xl">Battle of Kadesh</h1>
+                        <h3
+                            class="text-center text-gray-500 dark:text-gray-400"
+                        >
+                            History of Battle: How Hittites challenged Egypt's
+                            dominion at Kadesh
+                        </h3>
+
+                        <span
+                            class="text-sm text-gray-500 lg:text-lg dark:text-gray-400"
+                            >06/10/2023</span
+                        >
+                    </div>
+                </a>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer
+            class="grid grid-cols-2 gap-10 bg-gray-100 sm:flex sm:flex-col dark:bg-gray-900 sm:gap-0"
+        >
+            <div
+                class="flex flex-col items-center justify-center gap-5 py-20 border-r border-gray-400 dark:border-gray-600 sm:order-1 sm:border-none"
+            >
+                <div class="flex items-center justify-center gap-2">
+                    <img
+                        class="w-10 mr-1.5"
+                        src="src/img/logo.png"
+                        alt="logo"
+                    />
+                    <h2 class="text-4xl lg:text-5xl">My History Blog</h2>
+                </div>
+                <div class="text-sm text-center lg:text-lg">
+                    <p class="mb-2">
+                        &copy; 2024 | All Rights Reserved | Project for
+                        portfolio purposes.
+                    </p>
+                    <a
+                        class="border-gray-400 hover:border-b"
+                        href="https://www.flaticon.com/free-icons/pen"
+                        title="pen icons"
+                        >Logo created by Flaticon</a
+                    >
+                </div>
+            </div>
+
+            <!-- Footer navigation -->
+
+            <div
+                class="flex items-center justify-center gap-10 py-20 text-xl lg:text-2xl sm:flex sm:flex-col sm:text-3xl sm:border-b sm:border-gray-300 dark:sm:border-gray-500"
+            >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="#"
+                    >Home</a
+                >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="src/pages/archive.html"
+                    >Archive</a
+                >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="src/pages/about.html"
+                    >About</a
+                >
+            </div>
+        </footer>
+        <script type="module" src="/src/controller.js"></script>
+    </body>
+</html>

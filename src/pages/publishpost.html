@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Publish/Edit Post</title>
+        <link rel="stylesheet" href="../../dist/style.css" />
+
+        <!-- SVGs -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </head>
+    <body
+        class="text-lg text-gray-700 transition duration-300 font-Cardo dark:bg-gray-800 dark:text-gray-100 lg:text-2xl"
+    >
+        <!-- HEADER -->
+        <header>
+            <div
+                class="relative p-8 bg-gray-100 border-b border-gray-300 dark:border-gray-600 dark:bg-gray-950 lg:flex lg:flex-col lg:items-center lg:gap-3"
+            >
+                <!-- LOGO -->
+                <div
+                    class="flex items-center justify-center gap-2 lg:order-1 lg:my-5"
+                >
+                    <img class="w-10 mr-1.5" src="../img/logo.png" alt="logo" />
+                    <h2 class="text-4xl lg:text-5xl">My History Blog</h2>
+                </div>
+
+                <!-- OPTIONS -->
+                <div
+                    class="absolute flex items-center gap-4 text-2xl right-8 top-8 lg:static lg:opacity-50 lg:gap-96 sm:gap-40"
+                >
+                    <div class="flex items-center gap-3">
+                        <ion-icon
+                            name="sunny-outline"
+                            class="lg:w-8 lg:h-8"
+                        ></ion-icon>
+                        <span
+                            id="scheme-toggle"
+                            class="relative w-10 h-5 transition bg-gray-500 rounded-full cursor-pointer hover:bg-gray-400"
+                        >
+                            <span
+                                id="dot"
+                                class="absolute top-0 bottom-0 w-4 h-4 m-auto ml-0.5 transition duration-300 rounded-full bg-gray-50 dark:bg-gray-900"
+                            ></span
+                        ></span>
+
+                        <ion-icon
+                            name="moon-outline"
+                            class="lg:hidden"
+                        ></ion-icon>
+                    </div>
+                    <ion-icon
+                        class="p-3 rounded-full cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 lg:w-7 lg:h-7"
+                        name="search-outline"
+                    ></ion-icon>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav
+                class="flex justify-center gap-5 text-xl border-b border-gray-300 bg-gray-50 dark:bg-gray-900 dark:border-gray-600 lg:text-2xl"
+            >
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="../../index.html"
+                    >Home</a
+                >
+                <span class="py-3">/</span>
+                <a
+                    class="px-2 py-3 hover:px-2 dark:hover:bg-gray-700 hover:bg-gray-100"
+                    href="archive.html"
+                    >Archive</a
+                >
+                <span class="py-3">/</span>
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="about.html"
+                    >About</a
+                >
+                <span class="py-3">/</span>
+
+                <a
+                    class="px-2 py-3 hover:bg-gray-100 hover:px-2 dark:hover:bg-gray-700"
+                    href="admin.html"
+                    >Admin</a
+                >
+            </nav>
+        </header>
+
+        <!-- PUBLISH/EDIT POST -->
+        <section
+            class="flex flex-col w-10/12 gap-6 py-16 mx-auto my-16 bg-gray-100 rounded-md px-72 dark:bg-gray-900 xl:py-16 xl:px-52 lg:py-16 lg:px-24 sm:px-16"
+        >
+            <h2 class="mb-4 text-5xl sm:text-6xl">Publish/Edit Post</h2>
+
+            <div>
+                <h3 class="text-2xl sm:text-3xl">Title</h3>
+                <input
+                    type="text"
+                    class="w-full pt-2 pb-2 pl-3 text-gray-600 shadow-sm dark:shadow-none"
+                    placeholder="Interesting title..."
+                />
+            </div>
+
+            <div>
+                <h3 class="text-2xl sm:text-3xl">Description</h3>
+                <textarea
+                    class="w-full pt-2 pb-3 pl-3 text-gray-600"
+                    placeholder="Interesting description..."
+                ></textarea>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="text-2xl sm:text-3xl">Content</h3>
+                <textarea
+                    class="w-full pt-2 pl-3 text-gray-600 pb-52"
+                    placeholder="Interesting content..."
+                ></textarea>
+            </div>
+
+            <div class="flex justify-between sm:flex-col sm:gap-10">
+                <button
+                    class="px-6 py-3 text-3xl transition bg-gray-300 rounded-md shadow-sm dark:bg-gray-700 dark:hover:bg-gray-600 hover:bg-gray-600 hover:text-gray-50 dark:shadow-none sm:py-6 sm:text-4xl"
+                >
+                    Publish
+                </button>
+
+                <button
+                    class="px-6 py-3 text-3xl transition bg-red-400 rounded-md shadow-sm dark:bg-red-700 dark:hover:bg-red-600 hover:bg-red-600 hover:text-gray-50 dark:shadow-none sm:py-6 sm:text-4xl"
+                >
+                    Delete
+                </button>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer
+            class="grid grid-cols-2 gap-10 bg-gray-100 sm:flex sm:flex-col dark:bg-gray-900 sm:gap-0"
+        >
+            <div
+                class="flex flex-col items-center justify-center gap-5 py-20 border-r border-gray-400 dark:border-gray-600 sm:order-1 sm:border-none"
+            >
+                <div class="flex items-center justify-center gap-2">
+                    <img class="w-10 mr-1.5" src="../img/logo.png" alt="logo" />
+                    <h2 class="text-4xl lg:text-5xl">My History Blog</h2>
+                </div>
+                <div class="text-sm text-center lg:text-lg">
+                    <p class="mb-2">
+                        &copy; 2024 | All Rights Reserved | Project for
+                        portfolio purposes.
+                    </p>
+                    <a
+                        class="border-gray-400 hover:border-b"
+                        href="https://www.flaticon.com/free-icons/pen"
+                        title="pen icons"
+                        >Logo created by Flaticon</a
+                    >
+                </div>
+            </div>
+
+            <!-- Footer navigation -->
+
+            <div
+                class="flex items-center justify-center gap-10 py-20 text-xl lg:text-2xl sm:flex sm:flex-col sm:text-3xl sm:border-b sm:border-gray-300 dark:sm:border-gray-500"
+            >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="../../index.html"
+                    >Home</a
+                >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="archive.html"
+                    >Archive</a
+                >
+                <a
+                    class="border-b-2 border-transparent border-gray-400 hover:border-b-2 hover:border-b-gray-500"
+                    href="about.html"
+                    >About</a
+                >
+            </div>
+        </footer>
+        <script src="../controller.js"></script>
+    </body>
+</html>

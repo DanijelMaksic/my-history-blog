@@ -1,0 +1,16 @@
+{
+   "name": "My History Blog",
+   "version": "1.0.0",
+   "description": "Personal history blog",
+   "scripts": {
+      "compile": "tailwindcss -i src/input.css -o dist/style.css --watch",
+      "start": "parcel index.html"
+   },
+   "keywords": [],
+   "author": "Danijel Maksic",
+   "license": "ISC",
+   "devDependencies": {
+      "parcel": "^2.12.0",
+      "tailwindcss": "^3.4.3"
+   }
+}
